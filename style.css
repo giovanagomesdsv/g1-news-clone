@@ -1,5 +1,128 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.nav-principal {
+    display: flex;
+    height: 3rem;
+    background-color: #f5f5f5;
+    padding: 0 1rem;
+    align-items: stretch;
+}
+
 .logo {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid #ccc;
+    align-items: center;
+}
+.logo h1 {
+    font-size: 1rem;
+    color: #5b6af1;
+    cursor: pointer;
+    margin: .5rem;
+}
+.logo h1 a {
+    color: #5b6af1;
+}
+.logo h1>a:hover {
+    color: #808cf1;
+}
+
+.nav-principal ul {
+    display: flex;
+    align-items: stretch;
+    list-style: none;
+}
+.nav-principal ul li {
+    display: flex;
+    border-left: 1px solid #ccc;
+    position: relative;
+    border-left: none;
+}
+.nav-principal ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: .5rem; /* ajuste o comprimento da linha */
+    border-left: 1px solid #ccc;
+    transform: translateY(-50%);
+}
+
+.nav-principal ul li a {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.nav-principal ul li a.g1 {
+    color: #ac1f32;
+    border-top: 2px solid transparent;
+}
+.nav-principal ul li a.g1:hover {
+    border-top-color: #ac1f32;
+}
+
+.nav-principal ul li a.ge {
+    color: #1fac1f;
+    border-top: 2px solid transparent;
+}
+.nav-principal ul li a.ge:hover {
+    border-top-color: #1fac1f;
+}
+
+.nav-principal ul li a.gshow {
+    color: #ff6600;
+    border-top: 2px solid transparent;
+}
+.nav-principal ul li a.gshow:hover {
+    border-top-color: #ff6600;
+}
+
+.nav-principal ul li a.globoplay {
+    color: #ff0000;
+    border-top: 2px solid transparent;
+}
+.nav-principal ul li a.globoplay:hover {
+    border-top-color: #ff0000;
+}
+
+.nav-principal ul li a.oglobo {
+    color: #3e4394;
+    border-top: 2px solid transparent;
+}
+.nav-principal ul li a.oglobo:hover {
+    border-top-color: #3e4394;
+}
+
+.nav-principal .todos-sites {
+    margin-left: auto;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: #555555;
+    cursor: pointer;
+}
+.nav-principal .todos-sites a:visited {
+    color: #555;
+}
+.nav-principal .todos-sites a:hover p{
+    border-bottom: 1px solid #555555;
+}
+.nav-principal .todos-sites::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: .5rem; /* ajuste o comprimento da linha */
+    border-left: 1px solid #ccc;
+    transform: translateY(-50%);
 }
